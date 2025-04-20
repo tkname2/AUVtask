@@ -1,0 +1,6 @@
+In this task, two people (Jolyne and Joestar) can chat with each other on the same ROS node and rostopic. The user can enter a message, and it will be received by the other person and vice versa.
+my approach-A ROS publisher node is created for each user.
+            Both users publish and subscribe to the same topic (/chat_topic) to exchange message
+problems faced:
+i had to add anonymous=TRUE as at first one system shut down when i opened another to chat.
+While uploading to GitHub, I faced authentication issues because GitHub removed password-based authentication. I had to configure a personal access token (PAT) for push access. Additionally, I got a “rejected” error while pushing because my local repo and remote repo had no common history — I had to pull the remote and rebase.
